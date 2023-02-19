@@ -1,0 +1,142 @@
+.properties {
+    padding-top: 128px;
+    padding-bottom: 160px;
+    background: url(../../icons/corner_right_top.svg) right top / auto no-repeat,
+                url(../../icons/corner_left_bottom.svg) left bottom / auto no-repeat,
+                #F5F5F2;
+}
+.properties .sup-text {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 21px;
+}
+.properties .secondary-title {
+    text-align: center;
+    margin-bottom: 82px;
+}
+.properties-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 80px;
+}
+.property-card {
+    flex-basis: 405px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.property-card__image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 66%;
+}
+.property-card__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}
+.property-card__object {
+    padding: 4px 12px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    border-radius: 32px;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 1;
+}
+.property-card__object.rent {
+    background: #CF6F49;
+}
+.property-card__object.sale {
+    background: #939878;
+}
+.property-card__description {
+    padding: 24px;
+}
+.property-card__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 3px;
+}
+.property-card__price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+.property-card__location {
+    background: url(../../icons/place.svg) left center / auto no-repeat;
+    padding-left: 26px;
+    color: #65665C;
+    margin-bottom: 16px;
+}
+.property-card__characteristics {
+    display: flex;
+    gap: 24px;
+    color: #65665C;
+}
+.characteristic-bathtub {
+    background: url(../../icons/bathtub.svg) left center / auto no-repeat;
+    padding-left: 20px;
+}
+.characteristic-bed {
+    background: url(../../icons/bed.svg) left center / auto no-repeat;
+    padding-left: 26px;
+}
+.characteristic-square-foot {
+    background: url(../../icons/square_foot.svg) left center / auto no-repeat;
+    padding-left: 26px;
+}
+.properties-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+@media screen and (max-width: 1279.98px) {
+   .property-card {
+        flex-basis: 32.5%;
+        flex-grow: 1;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .properties {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .properties .secondary-title {
+        margin-bottom: 60px;
+    }
+    .properties-list {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .properties {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .properties .secondary-title {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 639.98px) {
+    .properties-list {
+        gap: 32px;
+    }
+    .property-card {
+        flex-basis: 100%;
+    }
+}

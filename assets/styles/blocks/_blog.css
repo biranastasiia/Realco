@@ -1,0 +1,124 @@
+.blog {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-color: #F5F5F2;
+}
+.blog .sup-text {
+    margin-bottom: 21px;
+}
+.blog .secondary-title {
+    margin-bottom: 29px;
+}
+.blog-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 77px;
+    gap: 20px;
+}
+.blog-text {
+    max-width: 710px;
+}
+.blog-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.blog-list__card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 32.5%;
+    flex-grow: 1;
+    background: #FFFFFF;
+    border: 1px solid #E7E8E3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+}
+.blog-list__card-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+    padding-bottom: 66%;
+}
+.blog-list__card-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    border-radius: 16px 16px 0 0;
+}
+.blog-list__card-description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 24px;
+}
+.blog-list__card-characteristics {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+.blog-list__card-tag {
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: 21px;
+    background: #FAE8E1;
+    border-radius: 32px;
+}
+.blog-list__card-data {
+    font-size: 14px;
+    line-height: 21px;
+    color: #65665C;
+}
+.blog-list__card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 9px;
+}
+.blog-list__card-text {
+    color: #65665C;
+    margin-bottom: 31px;
+}
+.blog-list__card .link {
+    width: fit-content;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .blog {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .blog-description {
+        margin-bottom: 50px;
+    }
+    .blog-list {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .blog {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .blog-list__card-description {
+        padding: 15px;
+    }
+    .blog-list__card-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .blog-list__card-text {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 559.98px) {
+    .blog-list__card {
+        flex-basis: 100%;
+    }
+}

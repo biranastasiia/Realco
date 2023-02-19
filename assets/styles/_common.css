@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body, .wrapper {
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A2C1F;
+}
+::-moz-selection { /* Code for Firefox */
+    color: #FFFFFF;
+    background-color: #CF6F49;
+}
+::selection {
+    color: #FFFFFF;
+    background-color: #CF6F49;
+}
+input {
+    background: #FFFFFF;
+    border: 1px solid #E7E8E3;
+    outline: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    padding: 12px 14px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #65665C;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #65665C;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #65665C;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #65665C;
+}
+textarea:focus,
+input:focus { 
+    border: 1px solid #CF6F49;; 
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.main-content {
+    flex: 1 1 auto;
+}
+.secondary-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+.button {
+    display: inline-block;
+    padding: 9px 21px;
+    border: 1px solid #E7E8E3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    transition: .3s all ease;
+    white-space: nowrap;
+}
+.button-big {
+    padding: 13px 25px;
+}
+.button-orange {
+    background-color: #CF6F49;
+    border: 1px solid #CF6F49;
+    color: #FFFFFF;
+}
+.button-white {
+    background-color: #FFFFFF;
+}
+.button:hover {
+    background-color: #65665C;
+    color: #FFFFFF;
+}
+.button-orange:hover {
+    background-color: #65665C;
+    border: 1px solid #65665C;
+}
+.sup-text {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    background: #E7E8E3;
+    border-radius: 32px;
+    padding: 4px 12px;
+}
+.link {
+    padding-right: 20px;
+    background: url(../icons/chevron_right.svg) right center / 6px 8px no-repeat;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1365.68px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+@media screen and (max-width: 1279.68px) {
+    .container {
+        max-width: 980px;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .container {
+        max-width: 750px;
+    }
+    .secondary-title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .button,
+    .button-big  {
+        padding: 5px 15px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    body {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .secondary-title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .container {
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 639.98px) {
+    .container {
+        max-width: 100%;
+    }
+}

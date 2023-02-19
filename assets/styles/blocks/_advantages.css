@@ -1,0 +1,111 @@
+.advantages .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 128px;
+}
+.advantages-content-wrapper,
+.advantages-image {
+    flex-basis: 600px;
+}
+.advantages-content-wrapper {
+    position: relative;
+}
+.advantages-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.advantages-content.left {
+    left: 0;
+    padding-right: 60px;
+}
+.advantages-content.right {
+    right: 0;
+    padding-left: 60px;
+}
+.advantages .sup-text {
+    margin-bottom: 20px;
+}
+.advantages .secondary-title {
+    margin-bottom: 28px;
+}
+.advantages-text {
+    font-size: 18px;
+    line-height: 27px;
+    color: #65665C;
+    margin-bottom: 21px;
+}
+.advantages-actions {
+    display: flex;
+    align-items: center;
+}
+.advantages .button {
+    margin-right: 24px;
+}
+.advantages-image img {
+    width: 100%;
+    height: auto;
+}
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 37px;
+    margin-bottom: 24px;
+}
+.step-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+.advantage-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 18px;
+}
+.advantage-text {
+    color: #65665C;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .advantages .container {
+        flex-direction: column;
+        margin-bottom: 100px;
+        position: relative;
+        gap: 50px;
+    }
+    .advantages .container:last-child {
+        flex-direction: column-reverse;
+    }
+    .advantages-content-wrapper,
+    .advantages-image {
+        flex-basis: auto;
+    }
+    .advantages-content {
+        position: unset;
+        transform: unset;
+    }
+    .advantages-content.left {
+        padding-right: 0;
+    }
+    .advantages-content.right {
+        padding-left: 0;
+    }
+    .advantages-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .advantages .container {
+        margin-bottom: 50px;
+    }
+    .advantages-list {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+}

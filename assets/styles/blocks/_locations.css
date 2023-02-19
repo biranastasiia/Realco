@@ -1,0 +1,68 @@
+.locations {
+    padding-bottom: 128px;
+    background-color: #F5F5F2;
+}
+.locations .secondary-title {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.locations-text {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #65665C;
+    margin-bottom: 73px;
+}
+.locations-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 80px;
+}
+.location {
+    flex-basis: 32.5%;
+    flex-grow: 1;
+    padding: 33px;
+    background: #FFFFFF;
+    border: 1px solid #E7E8E3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+}
+.location-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+.locations-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .locations {
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .locations {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .locations-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 50px;
+    }
+    .locations-list {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 559.98px) {
+    .location {
+        flex-basis: 100%;
+    }
+}

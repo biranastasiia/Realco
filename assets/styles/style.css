@@ -1,0 +1,16 @@
+@import url('_reset.css');
+@import url('_helpers.css');
+@import url('_common.css');
+
+/* BLOCKS */
+@import url('blocks/_header.css');
+@import url('blocks/_banner.css');
+@import url('blocks/_partners.css');
+@import url('blocks/_steps.css');
+@import url('blocks/_advantages.css');
+@import url('blocks/_properties.css');
+@import url('blocks/_locations.css');
+@import url('blocks/_priority.css');
+@import url('blocks/_testimonials.css');
+@import url('blocks/_blog.css');
+@import url('blocks/_footer.css');

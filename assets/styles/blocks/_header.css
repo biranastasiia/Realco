@@ -1,0 +1,244 @@
+.top-link {
+    background-color: #939878;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    transition: .3s all ease;
+}
+.top-link.hidden {
+    height: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+.top-link .container {
+    position: relative;
+}
+.top-link__icon {
+    position: absolute;
+    top: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+    right: 0;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.top-link__icon:hover {
+    transform: rotate(90deg);
+}
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-height: 74px;
+    transition: .3s all ease;
+}
+.header .logo {
+    margin-right: 20px;
+}
+.header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 70px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+}
+.search-icon {
+    margin-left: 4px;
+    width: 20px;
+    height: 30px;
+}
+.menu {
+    flex: 1 1 auto;
+    align-items: flex-end;
+}
+.menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+}
+.menu-item {
+    color: #222222;
+}
+.menu-link {
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.menu-link:hover {
+    text-decoration: underline;
+}
+.menu-link.expand-more {
+    background: url('../../icons/chevron_down.svg') right center / 10px 7px no-repeat;
+    padding-right: 24px;
+}
+.menu-burger-icon, 
+.menu-close-icon {
+    display: none;
+}
+.header-search {
+    margin-left: 32px;
+    background: url('../../icons/search.svg') left center / 16px 16px no-repeat;
+    padding-left: 24px;
+    cursor: pointer;
+}
+.cart.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+    margin-left: 24px;
+    padding-left: 24px;
+}
+.cart-icon {
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    fill: #2A2C1F;
+    transition: .3s all ease;
+}
+.cart:hover .cart-icon {
+    fill: #FFFFFF;
+}
+.button-property {
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .menu-list {
+        gap: 10px;
+    }
+    .cart.button {
+        gap: 0;
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+    .cart-icon {
+        display: none;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #2A2C1F;
+        width: 100%;
+        height: 100%;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s all ease-in-out;
+        transform: translateX(-100%);
+    }
+    .menu.open {
+        transform: translateX(0);
+    }
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+    .menu-item {
+        color: #FFFFFF;
+        font-size: 24px;
+    }
+    .menu-link {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .menu-link.expand-more {
+        background: url(../../icons/chevron_right_white.svg) right center / 7px no-repeat;
+    }
+    .menu-burger-icon {
+        display: block;
+        margin-left: 10px;
+        width: 30px;
+        height: 24px;
+        position: relative;
+        cursor: pointer;
+    }
+    .menu-burger-icon::before,
+    .menu-burger-icon::after {
+        content: '';
+    }
+    .menu-burger-icon span,
+    .menu-burger-icon::before,
+    .menu-burger-icon::after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #2A2C1F;
+        border-radius: 2px;
+    }
+    .menu-burger-icon span {
+        top: calc(50% - 1px);
+    }
+    .menu-burger-icon::before {
+        top: 0;
+    }
+    .menu-burger-icon::after {
+        bottom: 0;
+    }
+    .menu-close-icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+    .menu-close-icon::before,
+    .menu-close-icon::after {
+        content: '';
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #FFFFFF;
+        border-radius: 2px;
+    }
+    .menu-close-icon::before {
+        transform: rotate(45deg);
+    }
+    .menu-close-icon::after {
+        transform: rotate(-45deg);
+    }
+    .header-search {
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 639.98px) {
+   .menu-item {
+        font-size: 22px;
+    }
+    .menu-link {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 479.98px) {
+   .button-property {
+        display: none;
+   }
+   .menu-burger-icon {
+        width: 24px;
+   }
+}

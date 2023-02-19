@@ -1,0 +1,115 @@
+.banner {
+    display: flex;
+    position: relative;
+    margin-bottom: 67px;
+}
+.banner-content-wrapper {
+    width: 50%;
+    background: url(../../icons/corner_left_top.svg) top left / auto no-repeat, 
+                url(../../icons/corner_right_down.svg) right bottom / auto no-repeat, 
+                #F5F5F2;
+}
+.banner-content-wrapper .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.banner-content {
+    max-width: 516px;
+}
+.banner .sup-text {
+    margin-bottom: 24px;
+}
+.banner-title {
+    font-size: 56px;
+    line-height: 67px;
+    margin-bottom: 21px;
+}
+.banner-text {
+    font-size: 20px;
+    line-height: 30px;
+    color: #65665C;
+    margin-bottom: 21px;
+}
+.banner-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.search {
+   position: relative;
+}
+.search-icon {
+   position: absolute;
+   top: calc(50% - 16px);
+   left: 16px;
+}
+.search-input {
+    max-width: 310px;
+    width: 100%;
+    padding: 9px 0 9px 56px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.banner .button-property {
+    font-size: 20px;
+    line-height: 30px;
+}
+.banner-image {
+    width: 50%;
+}
+.banner-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .banner-title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .banner .sup-text {
+        margin-bottom: 15px;
+    }
+    .banner-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .search-icon {
+        left: 10px;
+    }
+    .search-input {
+        padding: 5px 0 5px 40px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .banner-actions {
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 639.98px) {
+    .banner {
+        margin-bottom: 50px;
+    }
+    .banner-content-wrapper {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .banner-content-wrapper .container {
+        position: unset;
+        transform: unset;
+    }
+    .banner-image {
+        display: none;
+    }
+   .banner-title {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 15px;
+    }
+}
